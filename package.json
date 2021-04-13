@@ -1,0 +1,25 @@
+{
+    "name": "vs-code-feap-syntax",
+    "displayName": "vs_code_feap_syntax",
+    "description": "Syntax highlighting for feap related files",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "feap",
+            "aliases": ["FEAP", "feap"],
+            "extensions": [".feap"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "feap",
+            "scopeName": "source.feap",
+            "path": "./syntaxes/feap.tmLanguage.json"
+        }]
+    }
+}
