@@ -3,6 +3,11 @@
     "displayName": "vs_code_feap_syntax",
     "description": "Syntax highlighting for feap related files",
     "version": "0.0.1",
+    "publisher": "llamm-de",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/llamm-de/vs-code-feap.git"
+    },
     "engines": {
         "vscode": "^1.55.0"
     },
@@ -29,5 +34,6 @@
                 "path": "./syntaxes/feap.tmLanguage.json"
             }
         ]
-    }
+    },
+    "dependencies": {}
 }
