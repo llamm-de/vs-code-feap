@@ -10,16 +10,24 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "feap",
-            "aliases": ["FEAP", "feap"],
-            "extensions": [".feap"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "feap",
-            "scopeName": "source.feap",
-            "path": "./syntaxes/feap.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "feap",
+                "aliases": [
+                    "FEAP",
+                    "feap"
+                ],
+                "extensions": [],
+                "firstLine": "^FEAP.*",
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "feap",
+                "scopeName": "source.feap",
+                "path": "./syntaxes/feap.tmLanguage.json"
+            }
+        ]
     }
 }

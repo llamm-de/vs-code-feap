@@ -1,32 +1,57 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "FEAP",
+	"scopeName": "source.feap",
 	"patterns": [
 		{
 			"include": "#keywords"
 		},
 		{
-			"include": "#strings"
+			"include": "#comments"
+		},
+		{
+			"include": "#numeric-constants"
 		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.feap",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.feap",
-			"begin": "\"",
-			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.feap",
-					"match": "\\\\."
+					"comment": "Header 1st line",
+					"name": "entity.name.function.subroutine.feap",
+					"begin": "^FEAP",
+					"end": "\\n"
+				},
+				{
+					"comment": "Header 2nd line",
+					"name": "entity.name.function.subroutine.feap",
+					"match": "(\\d\\s){6}"
+				},
+				{
+					"comment": "Control keywords",
+					"name": "keyword.control.feap",
+					"match": "\\b(STOP|stop|BATC.*|batc.*|END|end|LOOP|loop|NEXT|next|PARA.*|para.*|MATE\\w{0,4}|mate\\w{0,4}|USER|user|BLOC.?|bloc.?|CART|cart|EBOU.*|eboun.*|EDIS.*|edis.*)\\b"
+				},
+				{
+					"comment": "General keywords",
+					"name": "storage.type.double.feap",
+					"match": "\\b(TIME|time|TANG|tang|UTAN.?|utan.?|TPLO.?|tplo.?|DISP|disp|SUMS|sums|STRE|stre|OPTI|opti|DT|dt|PRIN.?|prin.?|NOPR|nopr|PROP|prop|TIE|tie)\\b"
 				}
 			]
+		},
+		"numeric-constants": {
+			"patterns": [
+				{
+					"name": "constant.numeric.feap",
+					"match": "(?ix)[\\+\\-]?(\\b\\d+\\.?\\d*|\\.\\d+) (_\\w+|d[\\+\\-]?\\d+|e[\\+\\-]?\\d+(_\\w+)?)?(?![a-z_])"
+				}
+			]
+		},
+		"comments": {
+			"comment": "Comments",
+			"name": "comment.line.feap",
+			"begin": "!",
+			"end": "(?=\\n)"
 		}
-	},
-	"scopeName": "source.feap"
+	}
 }
