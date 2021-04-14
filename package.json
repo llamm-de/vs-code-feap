@@ -9,7 +9,7 @@
         "url": "https://github.com/llamm-de/vs-code-feap.git"
     },
     "engines": {
-        "vscode": "^1.55.0"
+        "vscode": "^1.53.0"
     },
     "categories": [
         "Programming Languages"
