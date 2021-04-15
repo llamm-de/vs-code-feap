@@ -30,12 +30,12 @@
 				{
 					"comment": "Control keywords",
 					"name": "keyword.control.feap",
-					"match": "\\b(STOP|stop|BATC.*|batc.*|END|end|LOOP|loop|NEXT|next|PARA.*|para.*|MATE\\w{0,4}|mate\\w{0,4}|USER|user|BLOC.?|bloc.?|CART|cart|EBOU.*|eboun.*|EDIS.*|edis.*)\\b"
+					"match": "\\b(?i)(STOP|INTE\\w*|BATC\\w?|END|LOOP|NEXT|PARA\\w*|MATE\\w{0,4}|COOR\\w*|ELEM\\w*|BLOC\\w?|BLEN\\w?|TRIB\\w{0,4}|SIDE|SNOD\\w?|POLA\\w?|SPHE\\w{0,5}|SHIF\\w?|CART|EBOU\\w*|EDIS\\w*|GLOB\\w{0,2}|REGI\\w{0,2}|FLEX\\w{0,4}|TRAN\\w{0,5}|ANGL\\w?|CANG\\w{0,2}|EANG\\w{0,2}|ROTA\\w{0,2}|BOUN\\w{0,4}|CBOU\\w{0,5}|EBOU\\w{0,5}|EULE\\w?|FORC\\w?|CFOR\\w{0,2}|EFOR\\w{0,2}|DISP\\w*|CDIS\\w*|EDIS\\w*|TEMP\\w*|BTEM\\w*|FOLL\\w{0,4}|CSUR\\w{0,4}|FPRO\\w*|CPRO\\w*|EPRO\\w*|MPRO\\w*)\\b"
 				},
 				{
 					"comment": "General keywords",
 					"name": "storage.type.double.feap",
-					"match": "\\b(TIME|time|TANG|tang|UTAN.?|utan.?|TPLO.?|tplo.?|DISP|disp|SUMS|sums|STRE|stre|OPTI|opti|DT|dt|PRIN.?|prin.?|NOPR|nopr|PROP|prop|TIE|tie)\\b"
+					"match": "\\b(?i)(ON|ALL|OFF|TIME|CHEC\\w?|PLOT|MESH|FORM|SOLV|TANG\\w*|UTAN\\w*|TPLO\\w?|DISP|VELO|ACCE|REAC|RSUM\\w?|SUMS|STRE\\w{0,2}|ELEM|HIST|CONT|CHIS|ARCL|ENER|USER|OPTI|DT|PRIN.?|NOPR|PROP|TIE|LINK|ELIN\\w?|CLIN\\w?|PART\\w{0,5}|ORDE\\w?|RIGI\\w?|JOIN\\w{0,2}|RBOU\\w*|RDIS\\w*|RLOA\\w?|MAST\\w{0,2}|SHOW|NOSH\\w{0,2}|CONT|PAIR\\w*)\\b"
 				}
 			]
 		},
