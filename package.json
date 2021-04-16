@@ -33,6 +33,12 @@
                 "scopeName": "source.feap",
                 "path": "./syntaxes/feap.tmLanguage.json"
             }
+        ],
+        "snippets": [
+            {
+                "language": "feap",
+                "path": "./snippets/feap_snippets.json"
+            }
         ]
     },
     "dependencies": {}
