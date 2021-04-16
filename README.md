@@ -1,6 +1,6 @@
 # Basic Syntax highlighting for FEAP input files
 
-A Basic [Visual Studio Code](https://code.visualstudio.com/) extension for supporting basic syntax highlighting of [FEAP](http://projects.ce.berkeley.edu/feap/) input files.
+A simple [Visual Studio Code](https://code.visualstudio.com/) extension for supporting basic syntax highlighting of [FEAP](http://projects.ce.berkeley.edu/feap/) input files.
 
 ![](./images/example_1.png)
 
